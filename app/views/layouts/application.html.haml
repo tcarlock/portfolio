@@ -1,0 +1,30 @@
+!!! 5
+%html
+  %head
+    %title Colophon.io
+    /[if lt IE 9]
+      %script(src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript")
+    = stylesheet_link_tag 'application'
+    = yield :styles
+    = javascript_include_tag 'application', 'jquery_blockUI', 'galleria-1.2.8.min.js'
+    = yield :scripts
+    = csrf_meta_tag
+    %meta{name: 'viewport', :content => 'width=device-width, initial-scale=1.0'}
+  %body
+    %header#project_bar.container
+      #toggle_tab
+        %a{href:'#'}
+          %span More
+          %span Projects
+      %section#project_list.grid.grid-small.clearfix
+        - @projects.each do |project|
+          %article.format-image.project[project]
+            .grid-inner.clearfix
+              %a{href: "#{url_for project}"}
+                %h4<
+                  = project.title
+                %img{src: '/assets/portfolio7.png'}
+    #body_container.container
+      = yield
+      .clearfix
+      

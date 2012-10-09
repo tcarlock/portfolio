@@ -1,0 +1,18 @@
+%h1= @project.title
+%p= @project.details
+
+.row
+  .span8
+    - if @project.images.count > 0
+      #image_gallery.widget
+      - @project.images.each do |image|
+        %img{:src => "#{image.url}", 'data-title' => "#{image.title}", 'data-description' => "#{image.details}"}
+  .span4
+    #tech_tags.widget.tag-list-widget.clearfix
+      %h4 Technologies Used
+      %ul
+        = display_tags(@project, :tech)
+    #skill_tags.widget.tag-list-widget.clearfix
+      %h4 Skills Involved
+      %ul
+        = display_tags(@project, :skills)

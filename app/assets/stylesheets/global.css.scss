@@ -1,0 +1,215 @@
+@import 'sass_base';
+@import 'bootstrap';
+@import 'bootstrap-responsive';
+
+/*----------------------------------------------------------------------------------------
+  Typography via Google Fonts API
+-----------------------------------------------------------------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Istok+Web);
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+
+/*----------------------------------------------------------------------------------------
+Global Styles
+-----------------------------------------------------------------------------------------*/
+html, body, #body_container, #body_container .white-well, #body_container .white-well .row, #side_pane {
+  height:100%;
+}
+#body_container, #body_container .white-well, #body_container .white-well .row, #side_pane {
+  height:auto;
+  min-height:100%;
+}
+body {
+  background:url('/assets/background.png') repeat;
+  font-family:'Lora';
+}
+.container {
+  padding:0 25px;
+}
+#body_container {
+  @include border-radius(12px 12px 0 0);
+  padding-top:$bodyPaddingTop;
+}
+h1, h2, h3, h4, h5 {
+  font-family:'Istok Web';
+}
+a {
+  cursor:pointer;
+  color:$headingsColor;
+
+  &:hover {
+    text-decoration:none;
+    color:$textColor;    
+  }
+}
+
+/*----------------------------------------------------------------------------------------
+Lists and Widgets
+-----------------------------------------------------------------------------------------*/
+.widget {
+  display: block;
+  position: relative;
+  margin:0;
+  padding:0;
+  padding-top:$widgetPadding;
+  padding-bottom:$widgetPadding;
+
+  & > header {
+    display:block;
+    font-size:1.4em;
+    text-transform:none;
+    line-height:1.5em;
+    text-indent:3px;
+    margin-bottom:7px;
+    padding-top:3px;
+    padding-bottom:3px;
+  }
+  & > ul {
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+ul,
+.list-style-1,
+.list-style-2,
+.tag-list,
+.image-tab-list,
+.image-text-list {
+  list-style-position: inside;
+  list-style:none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    a {
+      cursor:pointer;
+    }
+  }
+}
+
+.widget-style-1,
+.widget-style-2,
+.widget-tag-list {
+  & > ul > li > a {
+    color:#3595D4;
+
+    &:hover {
+      color:#FF571A;
+    }
+  }
+}
+
+.list-style-1,
+.widget-style-1 ul,
+.list-style-2,
+.widget-style-2 ul {
+  li {
+    padding:5px 7px;
+    line-height:22px;
+    border-bottom:1px dotted #dddfda;
+  }
+}
+
+/* Widget / List style 1 --------- */
+.list-style-1,
+.widget-style-1 ul {
+  list-style-image:url('/assets/bullet-style-1.png');
+
+  li:hover {
+    list-style-image:url('/assets/bullet-style-1-hover.png');
+  }
+}
+
+/* Widget / List style 2 --------- */
+.list-style-2,
+.widget-style-2 ul {
+  list-style-image:url('/assets/bullet-style-2.png');
+
+  li:hover {
+    list-style-image:url('/assets/bullet-style-2-hover.png');
+  }
+}
+
+/* Tag Widget / List style --------- */
+.tag-list,
+.tag-list-widget ul {
+  list-style-type: none;
+  margin:0;
+
+  li {
+    @include border-radius(5px);
+    color:$tagTextColor;
+    display: inline-block;
+    float: left;
+    background-color:$tagBGColor;
+    border-width:1px;
+    border-style:solid;
+    border-color:$tagBorderColor;
+    margin: 3px 6px 3px 0;
+    padding:5px 7px;
+    background-color:$elementColor;
+  }
+}
+
+.grid-small article {}
+
+article {
+  display: inline-block;
+  position: relative;
+  padding:10px;
+  margin:7px;
+  @include border-radius(7px);
+  background:#fff;
+  border:1px solid #fff;
+  @include box-shadow(0 0 5px #000);
+  float:left;
+}
+
+/*----------------------------------------------------------------------------------------
+Global page styles
+-----------------------------------------------------------------------------------------*/
+#project_bar {
+  position:relative;
+  background-color: #454A52;
+  color: #CDCDCD;
+  background-image: url('/assets/low_contrast_linen.png');
+  background-position: bottom left;
+  background-repeat: repeat;
+  margin-bottom:15px;
+  @include border-radius(0 0 12px 12px);
+  @include box-shadow(#{0 2px 5px #666});
+  height:40px;
+
+  #toggle_tab {
+    background-color:#D9574C;
+    background:url('/assets/bg-action-hire.png') no-repeat top center;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    z-index: 999;
+    width: 92px;
+    height: 86px;
+    float: right;
+    text-align:center;
+    padding-top:10px;
+
+    span {
+      font-family:'Istok Web';
+      display:block;
+      color:#fff;
+    }
+  }
+  #project_list {
+    margin:15px 0;
+    display:none;
+  }
+}
+#body_container {
+  background-color:#fff;
+  @include box-shadow(#{0 2px 5px rgba(0,0,0,.1), 0 -2px 5px rgba(0,0,0,.25) inset});
+
+}
+
+@import 'projects';
