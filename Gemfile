@@ -22,10 +22,10 @@ gem 'bootstrap-sass'
 gem 'paperclip'
 gem 'acts-as-taggable-on'
 gem 'haml'
+gem 'thin'
 
 group :development, :test do
   gem 'debugger'
-  gem 'thin'
 end
 
 group :production, :staging do
