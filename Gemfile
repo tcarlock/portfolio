@@ -14,6 +14,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'factory_girl_rails'
+gem 'faker'
 gem 'sass-rails',   '~> 3.2.3'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
@@ -22,9 +24,6 @@ gem 'acts-as-taggable-on'
 gem 'haml'
 
 group :development, :test do
-  gem 'factory_girl_rails'
-  gem 'faker'
-  gem 'rspec-rails'
   gem 'debugger'
   gem 'thin'
 end
