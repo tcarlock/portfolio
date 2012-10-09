@@ -27,6 +27,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'debugger'
   gem 'thin'
+  gem 'heroku'
 end
 
 group :production, :staging do

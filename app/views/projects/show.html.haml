@@ -5,8 +5,8 @@
   .span8
     - if @project.images.count > 0
       #image_gallery.widget
-      - @project.images.each do |image|
-        %img{:src => "#{image.url}", 'data-title' => "#{image.title}", 'data-description' => "#{image.details}"}
+        - @project.images.each do |image|
+          %img{:src => "/assets/screen_caps/#{image.file_path}", 'data-title' => "#{image.title}", 'data-description' => "#{image.details}"}
   .span4
     #tech_tags.widget.tag-list-widget.clearfix
       %h4 Technologies Used

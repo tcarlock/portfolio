@@ -2,7 +2,6 @@
 
 FactoryGirl.define do
   factory :image do
-    url "MyString"
-    order 1
+
   end
 end

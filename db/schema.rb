@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(:version => 20121009031653) do
 
   create_table "images", :force => true do |t|
     t.integer  "project_id"
-    t.string   "url"
+    t.string   "file_path"
     t.string   "title"
     t.text     "details"
     t.integer  "sort_order"

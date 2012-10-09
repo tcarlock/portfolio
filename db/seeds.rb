@@ -11,9 +11,8 @@ project = FactoryGirl.create(:project,
   skill_list: "Web Application Development, Interface Design, API Design, PaaS"
 )
 
-# project.images << FactoryGirl.create(:project, url: "", order: project.images + 1)
-# project.images << FactoryGirl.create(:project, url: "", order: project.images + 1)
-# project.images << FactoryGirl.create(:project, url: "", order: project.images + 1)
+project.images << FactoryGirl.create(:image, file_path: "sam/orders.png", sort_order: project.images.count + 1)
+project.images << FactoryGirl.create(:image, file_path: "sam/profile.png", sort_order: project.images.count + 1)
 
 project = FactoryGirl.create(:project,
   title: "Nexly",
@@ -26,6 +25,14 @@ project = FactoryGirl.create(:project,
   tech_list: "Ruby on Rails, Sass, Haml, CSS3, Sinatra, jQuery, offeeScript, JavaScript, Sphinx, Twitter Bootstrap, Heroku, Devise, Paperclip, CanCan, PostgreSQL",
   skill_list: "Web Application Development, Interface Design, API Design, PaaS"
 )
+
+project.images << FactoryGirl.create(:image, file_path: "nexly/site_home.png", sort_order: project.images.count + 1)
+project.images << FactoryGirl.create(:image, file_path: "nexly/profile.png", sort_order: project.images.count + 1)
+project.images << FactoryGirl.create(:image, file_path: "nexly/analytics_home.png", sort_order: project.images.count + 1)
+project.images << FactoryGirl.create(:image, file_path: "nexly/manage_reviews.png", sort_order: project.images.count + 1)
+project.images << FactoryGirl.create(:image, file_path: "nexly/manage_sites.png", sort_order: project.images.count + 1)
+project.images << FactoryGirl.create(:image, file_path: "nexly/integration.png", sort_order: project.images.count + 1)
+project.images << FactoryGirl.create(:image, file_path: "nexly/toolbar_customize.png", sort_order: project.images.count + 1)
 
 project = FactoryGirl.create(:project,
   title: "timcarlock.me",

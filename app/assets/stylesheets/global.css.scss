@@ -101,37 +101,6 @@ ul,
   }
 }
 
-.list-style-1,
-.widget-style-1 ul,
-.list-style-2,
-.widget-style-2 ul {
-  li {
-    padding:5px 7px;
-    line-height:22px;
-    border-bottom:1px dotted #dddfda;
-  }
-}
-
-/* Widget / List style 1 --------- */
-.list-style-1,
-.widget-style-1 ul {
-  list-style-image:url('/assets/bullet-style-1.png');
-
-  li:hover {
-    list-style-image:url('/assets/bullet-style-1-hover.png');
-  }
-}
-
-/* Widget / List style 2 --------- */
-.list-style-2,
-.widget-style-2 ul {
-  list-style-image:url('/assets/bullet-style-2.png');
-
-  li:hover {
-    list-style-image:url('/assets/bullet-style-2-hover.png');
-  }
-}
-
 /* Tag Widget / List style --------- */
 .tag-list,
 .tag-list-widget ul {
@@ -158,7 +127,7 @@ ul,
 article {
   display: inline-block;
   position: relative;
-  padding:10px;
+  padding:3px 10px 10px 10px;
   margin:7px;
   @include border-radius(7px);
   background:#fff;
@@ -180,7 +149,7 @@ Global page styles
   margin-bottom:15px;
   @include border-radius(0 0 12px 12px);
   @include box-shadow(#{0 2px 5px #666});
-  height:40px;
+  min-height:60px;
 
   #toggle_tab {
     background-color:#D9574C;
@@ -203,7 +172,9 @@ Global page styles
   }
   #project_list {
     margin:15px 0;
-    display:none;
+    display:block;
+    height:50px;
+    overflow:hidden;
   }
 }
 #body_container {
@@ -211,5 +182,11 @@ Global page styles
   @include box-shadow(#{0 2px 5px rgba(0,0,0,.1), 0 -2px 5px rgba(0,0,0,.25) inset});
 
 }
-
-@import 'projects';
+#image_gallery {
+  padding:0px;
+  height:500px;
+  width:770px;
+  background-color:#000;
+  @include border-radius(0);
+  margin-top:20px;
+}
