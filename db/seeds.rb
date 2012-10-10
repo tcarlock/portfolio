@@ -39,12 +39,12 @@ project = FactoryGirl.create(:project,
   skill_list: "Web Application Development, Interface Design, Natural Language Processing, Collective Intelligence"
 )
 
-project.images << FactoryGirl.create(:image, file_path: "nexly/feed.png", sort_order: project.images.count + 1, title: "Main feed", details: "")
-project.images << FactoryGirl.create(:image, file_path: "nexly/add_link.png", sort_order: project.images.count + 1, title: "Add post a new link", details: "")
-project.images << FactoryGirl.create(:image, file_path: "nexly/add_feed.png", sort_order: project.images.count + 1, title: "Add a new RSS feed", details: "")
-project.images << FactoryGirl.create(:image, file_path: "nexly/page.png", sort_order: project.images.count + 1, title: "A topic-specific page", details: "")
-project.images << FactoryGirl.create(:image, file_path: "nexly/pages.png", sort_order: project.images.count + 1, title: "A list of all pages a user is subscribed to", details: "")
-project.images << FactoryGirl.create(:image, file_path: "nexly/profile.png", sort_order: project.images.count + 1, title: "A user's profile page", details: "")
+project.images << FactoryGirl.create(:image, file_path: "topic_flock/feed.png", sort_order: project.images.count + 1, title: "Main feed", details: "")
+project.images << FactoryGirl.create(:image, file_path: "topic_flock/add_link.png", sort_order: project.images.count + 1, title: "Add post a new link", details: "")
+project.images << FactoryGirl.create(:image, file_path: "topic_flock/add_feed.png", sort_order: project.images.count + 1, title: "Add a new RSS feed", details: "")
+project.images << FactoryGirl.create(:image, file_path: "topic_flock/page.png", sort_order: project.images.count + 1, title: "A topic-specific page", details: "")
+project.images << FactoryGirl.create(:image, file_path: "topic_flock/pages.png", sort_order: project.images.count + 1, title: "A list of all pages a user is subscribed to", details: "")
+project.images << FactoryGirl.create(:image, file_path: "topic_flock/profile.png", sort_order: project.images.count + 1, title: "A user's profile page", details: "")
 
 project = FactoryGirl.create(:project,
   title: "timcarlock.com",
@@ -56,8 +56,8 @@ project = FactoryGirl.create(:project,
   skill_list: "Web Application Development, Interface Design, API Design, PaaS"
 )
 
-project.images << FactoryGirl.create(:image, file_path: "nexly/splash.png", sort_order: project.images.count + 1, title: "The welcome page", details: "")
-project.images << FactoryGirl.create(:image, file_path: "nexly/project_bar.png", sort_order: project.images.count + 1, title: "A list of projects in the portfolio", details: "")
-project.images << FactoryGirl.create(:image, file_path: "nexly/project_view.png", sort_order: project.images.count + 1, title: "The project-details page including a screenshot gallery", details: "")
-project.images << FactoryGirl.create(:image, file_path: "nexly/full_img.png", sort_order: project.images.count + 1, title: "A full-size image", details: "")
-project.images << FactoryGirl.create(:image, file_path: "nexly/full_img.png", sort_order: project.images.count + 1, title: "", details: "")
+project.images << FactoryGirl.create(:image, file_path: "portfolio/splash.png", sort_order: project.images.count + 1, title: "The welcome page", details: "")
+project.images << FactoryGirl.create(:image, file_path: "portfolio/project_bar.png", sort_order: project.images.count + 1, title: "A list of projects in the portfolio", details: "")
+project.images << FactoryGirl.create(:image, file_path: "portfolio/project_view.png", sort_order: project.images.count + 1, title: "The project-details page including a screenshot gallery", details: "")
+project.images << FactoryGirl.create(:image, file_path: "portfolio/full_img.png", sort_order: project.images.count + 1, title: "A full-size image", details: "")
+project.images << FactoryGirl.create(:image, file_path: "portfolio/full_img.png", sort_order: project.images.count + 1, title: "", details: "")
