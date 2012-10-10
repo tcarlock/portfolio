@@ -1,5 +1,5 @@
 class MainController < ApplicationController
   def index
-    render 'index', layout: false
+    render 'index'
   end
 end

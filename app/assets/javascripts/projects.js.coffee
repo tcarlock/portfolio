@@ -1,6 +1,6 @@
 $(document).ready ->
   $('#toggle_tab').click((e) ->
-    $('#project_list').slideToggle(300)
+    $('#project_list article').slideToggle(300)
   )
 
   if $('#image_gallery img').length > 0

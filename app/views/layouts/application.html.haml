@@ -14,16 +14,16 @@
     %header#project_bar.container
       #toggle_tab
         %a{href:'#'}
-          %span More
+          %span My
           %span Projects
       %section#project_list.grid.grid-small.clearfix
         - @projects.each do |project|
           %article.format-image.project[project]
             .grid-inner.clearfix
               %a{href: "#{url_for project}"}
-                %h4<
+                %h5<
                   = project.title
-                %img{src: '/assets/portfolio7.png'}
+                %img{src: "/assets/screen_caps/#{project.images.first.file_path.gsub!('.png', '_thumb.png')}"}
     #body_container.container
       = yield
       .clearfix
