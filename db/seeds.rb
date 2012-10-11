@@ -5,7 +5,7 @@ project = FactoryGirl.create(:project,
     The tool is being built with Ruby on Rails and Sinatra running on PostgreSQL with jQuery, Sass and CoffeeScript on the front end." , 
   primary_url: "",
   tech_list: "Ruby on Rails, Sass, Haml, CSS3, Sinatra, jQuery, CoffeeScript, JavaScript, Sphinx, Twitter Bootstrap, Heroku, Devise, Paperclip, Heroku Accounts, CanCan, PostgreSQL",
-  skill_list: "Web Application Development, Interface Design, API Design, PaaS"
+  skill_list: "Web Application Development, Interface Design, API Design, PaaS, Performance Optimization"
 )
 
 project.images << FactoryGirl.create(:image, file_path: "sam/profile.png", sort_order: project.images.count + 1, title: "", details: "")
@@ -52,8 +52,8 @@ project = FactoryGirl.create(:project,
 
     The site was developed using Rails 3.2.8, PostgreSQL and a variety of front-end technologies including Sass, Haml, jQuery and CoffeeScript.", 
   primary_url: "",
-  tech_list: "Ruby on Rails, Sass, Haml, CSS3, jQuery, CoffeeScript, Twitter Bootstrap, Heroku, PostgreSQL",
-  skill_list: "Web Application Development, Interface Design, API Design, PaaS"
+  tech_list: "Ruby on Rails, Sass, Haml, CSS3, jQuery, CoffeeScript, Twitter Bootstrap, Heroku, PostgreSQL, Faker",
+  skill_list: "Web Application Development, Interface Design"
 )
 
 project.images << FactoryGirl.create(:image, file_path: "portfolio/splash.png", sort_order: project.images.count + 1, title: "The welcome page", details: "")
