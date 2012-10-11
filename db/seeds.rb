@@ -8,8 +8,8 @@ project = FactoryGirl.create(:project,
   skill_list: "Web Application Development, Interface Design, API Design, PaaS"
 )
 
-project.images << FactoryGirl.create(:image, file_path: "sam/orders.png", sort_order: project.images.count + 1, title: "", details: "")
 project.images << FactoryGirl.create(:image, file_path: "sam/profile.png", sort_order: project.images.count + 1, title: "", details: "")
+project.images << FactoryGirl.create(:image, file_path: "sam/orders.png", sort_order: project.images.count + 1, title: "", details: "")
 
 project = FactoryGirl.create(:project,
   title: "Nexly",
