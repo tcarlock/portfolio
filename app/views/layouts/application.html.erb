@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppController">
+<head>
+  <title>timcarlock.com | Tim Carlock&apos;s Personal Portfolio</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tag %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <header id="project_bar" class="container">
+    <div id="toggle_tab" ng-click="toggleProjects()">
+      <span>My</span>
+      <span>Projects</span>
+    </div>
+    <section id="project_list" class="grid grid-small container clearfix" ng-show="showProjects" ng-animate="{ show: 'fade-show', hide: 'fade-hide' }">
+      <a href="/projects/{{project.id}}" ng-repeat="project in projects">
+        <article class="format-image project">
+          <div class="grid-inner clearfix">
+            <h5>{{project.title}}</h5>
+            <img ng-src="{{project.thumbnail_url}}" alt="{{project.title}} thumbnail">
+          </div>
+        </article>
+      </a>
+  </header>
+  <div id="body_container" class="container" ng-view></div>
+</body>

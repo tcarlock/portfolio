@@ -1,5 +1,8 @@
 Portfolio::Application.routes.draw do
-  resources :projects
+
+  scope 'api', defaults: { format: :json } do
+    resources :projects
+  end
 
   root to: 'main#index'
 end
