@@ -11,16 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121009031653) do
+ActiveRecord::Schema.define(:version => 20130727094247) do
 
-  create_table "images", :force => true do |t|
+  create_table "attachments", :force => true do |t|
     t.integer  "project_id"
-    t.string   "file_path"
     t.string   "title"
     t.text     "details"
     t.integer  "sort_order"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
   end
 
   create_table "projects", :force => true do |t|

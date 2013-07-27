@@ -14,6 +14,7 @@ end
 
 gem 'factory_girl_rails'
 gem 'sass-rails'
+gem 'font-awesome-sass-rails'
 gem 'rabl'
 gem 'oj'
 gem 'jquery-rails'
@@ -24,7 +25,9 @@ gem 'haml'
 gem 'thin'
 
 group :development, :test do
-  gem 'debugger'
+  gem 'pry'
+  gem 'pry-rails'
+  gem 'pry-debugger'
 end
 
 group :production, :staging do

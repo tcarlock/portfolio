@@ -13,4 +13,5 @@
 //= require angular
 //= require angular-resource
 //= require galleria-1.2.9
+//= require global
 //= require_tree ./angular
