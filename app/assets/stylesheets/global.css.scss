@@ -155,7 +155,7 @@ Global page styles
 #toggle_tab {
   cursor: pointer;
   background-color: #eb374b;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 140px;
   z-index: 10000;
@@ -184,7 +184,7 @@ Global page styles
 }
 
 #project_bar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
