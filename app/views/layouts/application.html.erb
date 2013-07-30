@@ -22,7 +22,7 @@
             <div class="grid-inner clearfix">
               <h5>{{project.title}}</h5>
               <img ng-src="{{project.thumbnail_url}}" alt="{{project.title}} thumbnail" ng-show="project.attachments.length">
-              <span ng-hide="project.attachments.length">No attachments yet</span>
+              <small ng-hide="project.attachments.length">No attachments yet</small>
             </div>
           </article>
         </a>
