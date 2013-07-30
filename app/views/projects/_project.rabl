@@ -1,9 +1,17 @@
 object @project
 
-attributes :id, :title, :details, :primary_url, :github_url, :created_at, :updated_at
+attributes :id, :title, :details, :primary_url, :github_url, :start_date
+
+node :display_date do |project|
+  project.start_date.strftime("%B %Y")
+end
 
 node :thumbnail_url do |project|
-  project.attachments.first.file(:thumb)
+  if project.attachments.count > 0
+    project.attachments.first.file(:large)
+  else
+    ""
+  end
 end
 
 child :attachments do |project|

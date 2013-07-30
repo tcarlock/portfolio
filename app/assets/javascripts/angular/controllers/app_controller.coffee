@@ -16,3 +16,7 @@ app.controller 'AppController', ($scope, $location, $rootScope, ProjectsCache) -
 
   $rootScope.$on '$routeChangeSuccess', ->
     $scope.hideProjects()
+
+  $('#container_outer').click ->
+    $scope.hideProjects()
+    $scope.$digest()

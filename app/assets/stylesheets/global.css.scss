@@ -12,11 +12,11 @@
 /*----------------------------------------------------------------------------------------
 Global Styles
 -----------------------------------------------------------------------------------------*/
-html, body, #body_container, #body_container .white-well, #body_container .white-well .row, #side_pane {
+html, body, #container_outer, #side_pane {
   height:100%;
 }
 
-#body_container, #body_container .white-well, #body_container .white-well .row, #side_pane {
+#body_container, #container_outer, #side_pane {
   height:auto;
   min-height:100%;
 }
@@ -31,10 +31,13 @@ body {
 }
 
 #body_container {
-  padding-top:$bodyPaddingTop;
   background-color:#fff;
+  padding-top: $bodyPaddingTop;
+  padding-bottom: $bodyPaddingTop;
   margin-top: 75px;
-  @include box-shadow(#{0 -2px 3px rgba(0,0,0,.25) inset});
+  /*@include box-shadow(#{0 -2px 3px rgba(0,0,0,.25) inset});*/
+  @include box-shadow(#{0 0 2px 0px rgba(0, 0, 0, 0.05)});
+  border: 1px solid rgba(0,0,0,.15);
 }
 
 h1, h2, h3, h4, h5 {
@@ -45,8 +48,15 @@ a {
   color:$linkColor;
 
   &:hover {
-    text-decoration:none;
     color:$linkColor;
+  }
+}
+
+.side-bar {
+  h4 {
+    padding-bottom: 7px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #e1e1e3;
   }
 }
 
@@ -55,10 +65,19 @@ a {
     line-height: 1.3em;
     margin-bottom: 20px;
   }
+
+  h4 {
+    margin-top: 40px;
+  }
+
   p {
     font-size: 1.4em;
     margin-bottom: 20px;
     line-height: 1.2em;
+
+    a {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -103,6 +122,7 @@ Lists and Widgets
     margin: 3px 6px 3px 0;
     padding:5px 10px;
     background-color:$linkColor;
+    font-size: .9em;
   }
 }
 
@@ -116,8 +136,7 @@ article {
   float:left;
 }
 
-.contact-list,
-.link-list {
+.contact-list {
   li {
     padding: 5px 0;
   }
@@ -125,7 +144,7 @@ article {
 
 .link-list {
   li {
-    text-indent: 3px;
+    padding: 5px 3px;
     border-bottom: 1px solid #e1e1e3;
   }
 }
@@ -138,17 +157,29 @@ Global page styles
   background-color: #eb374b;
   position: absolute;
   top: 0;
-  right: 100px;
+  right: 140px;
   z-index: 10000;
-  width: 92px;
-  height: 55px;
-  text-align:center;
-  padding-top:10px;
+  text-align:left;
+  padding:7px 15px;
 
   span {
     font-family:'Helvetica';
     display:block;
     color:#fff;
+  }
+
+  a {
+    &:hover { text-decoration: none; }
+  }
+
+  i {
+    color: #fff;
+    margin: 3px 7px;
+  }
+
+  &:after {
+    content: '';
+    @include box-shadow(5px 5px)
   }
 }
 
@@ -167,15 +198,15 @@ Global page styles
   min-height: 10px;
 
   #project_list {
-    margin: 15px auto;
+    margin: 60px auto 25px auto;
     display:block;
     min-height:30px;
     overflow:hidden;
 
     article {
       width:200px;
+      min-height: 160px;
       @include box-shadow(#{0 0 10px 0 black, inset 0 0 0 0 #a1a1a3});
-      border: 1px solid #a1a1a3;
 
       h5 {
         font-size: 1.2em;
@@ -186,22 +217,6 @@ Global page styles
         width:200px;
       }
     }
-  }
-}
-
-#splash_container {
-  width:600px;
-  margin:0 auto;
-  padding-top:25px;
-
-  h1 {
-    font-size:3em;
-    line-height:1.5em;
-  }
-  p {
-    font-size:1.2em;
-    line-height:1.4em;
-    text-align:justify;
   }
 }
 

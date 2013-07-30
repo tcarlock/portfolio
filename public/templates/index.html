@@ -1,21 +1,27 @@
 <div class="row">
-  <div class="span3">
+  <div class="span3 side-bar">
     <section id="links" class="widget">
       <h4>More About Me</h4>
       <ul class="contact-list unstyled">
         <li>
-          <i class="icon-linkedin icon-large"></i>
-          <span>Connect with me on LinkedIn</span>
+          <a popup href="http://www.linkedin.com/in/tscarlock/">
+            <i class="icon-linkedin icon-large"></i>
+            <span>Connect on LinkedIn</span>
+          </a>
         </li>
         <li>
-          <i class="icon-github icon-large"></i>
-          <span>Browse My Code</span>
+          <a popup href="https://github.com/tcarlock">
+            <i class="icon-github icon-large"></i>
+            <span>Browse My Code</span>
+          </a>
         </li>
-        <li>
-          <i class="icon-twitter icon-large"></i>
-          <span>Follow me on Twitter</span>
+        <li class="hidden">
+          <a popup href="http://.com/">
+            <i class="icon-twitter icon-large"></i>
+            <span>Follow me on Twitter</span>
+          </a>
         </li>
-        <li>
+        <li class="hidden">
           <i class="icon-file-alt icon-large"></i>
           <span>Download My Resume</span>
         </li>
@@ -29,45 +35,44 @@
           <span>314.719.9051</span>
         </li>
         <li>
-          <i class="icon-envelope icon-large"></i>
-          <span>timothy.carlock@gmail.com</span>
+          <a href="mailto:timothy.carlock@gmail.com;">
+            <i class="icon-envelope icon-large"></i>
+            <span>timothy.carlock@gmail.com</span>
+          </a>
         </li>
       </ul>
     </section>
     <section id="resources" class="widget">
-      <h4>Stuff I Find Interesting</h4>
+      <h4>Some Interesting Links</h4>
       <ul class="link-list unstyled">
         <li>
-          <a href="http://dailyjs.com">DailyJS</a>
+          <a popup href="http://dailyjs.com">DailyJS</a>
         </li>
         <li>
-          <a href="http://www.smashingmagazine.com">Smashing Magazine</a>
+          <a popup href="http://www.smashingmagazine.com">Smashing Magazine</a>
         </li>
         <li>
-          <a href="http://uxmag.com">UX Magazine</a>
+          <a popup href="http://uxmag.com">UX Magazine</a>
         </li>
         <li>
-          <a href="http://angularjs.org">AngularJS</a>
+          <a popup href="http://robots.thoughtbot.com">ThoughtBot Blog</a>
         </li>
         <li>
-          <a href="http://robots.thoughtbot.com">ThoughtBot Blog</a>
+          <a popup href="http://37signals/svn">37 Signals Blog - Signal vs. Noise</a>
         </li>
         <li>
-          <a href="http://37signals/svn">37 Signals Blog - Signal vs. Noise</a>
+          <a popup href="http://blog.samaltman.com/">Sam Altman&apos;s Blog</a>
         </li>
         <li>
-          <a href="http://coursera.org">Coursera</a>
+          <a popup href="http://www.egghead.io/">egghead (AngularJS tutorials)</a>
         </li>
         <li>
-          <a href="http://teamtreehouse.com/">Treehouse</a>
-        </li>
-        <li>
-          <a href="http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142">
+          <a popup href="http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142">
             The Visual Display of Quantitative Information (Tufte)
           </a>
         </li>
         <li>
-          <a href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758">
+          <a popup href="http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758">
             Don't Make Me Think: A Common Sense Approach to Web Usability (Krug)
           </a>
         </li>
@@ -79,14 +84,19 @@
       Hello...my name is Tim Carlock
     </h1>
     <p>
-      I'm a full-stack web engineer and product designer who is passionate about technology, entreprenuership and building elegant, useful software products. I've worked at a couple of large corporations, I ran a web-product group for a small business, and I co-founded a business-software startup.
+      I'm a full-stack web engineer and <a popup href="http://adaptivepath.com/ideas/what-makes-a-design-technologist">design technologist</a> who is passionate about technology, entreprenuership and product design/usability. I'm a native of the midwest and a recent transplant to the Bay Area. These days I spend a lot of time running, practicing martial arts and biking.
     </p>
+    <h4>My Work History</h4>
     <p>
-      I'm a native of the midwest and a recent transplant to the Bay Area. When not geeking out over technology and entreprenuership, I can usually be found running, practicing martial arts or biking.
+      I started my career in the financial-services industry with A.G. Edwards (now Wells Fargo) where I built an application which employed modern portfolio theory to recommend better allocations across various asset classes. I spent another five years in the financial-services industry where I built a product team before leaving to start a <a href="/projects/2">business-software company</a>. I recently joined Learnist where we&apos;re building a product to help people more-easily learn new skills.
     </p>
+    <h4>My Technology Preferences</h4>
     <p>
+      These days my preferred back-end stack includes PostgreSQL, Redis, and Ruby on Rails. Although it&apos;s become crowded, I'm a big proponent of <a href="http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/">MV* frameworks</a> on the client side and while I initially used BackboneJS, my preferred framework is now <a popup href="http://angularjs.org">AngularJS</a>. Additionally, I use CSS3, <a href="http://http://sass-lang.com/">Sass</a>, <a href="http://coffeescript.org/">CoffeeScript</a> and <a href="http://jquery.com/">jQuery</a>. Some of my favorite tools include Sublime, Git, Batarang, RSpec and FactoryGirl.
+    </p>
+    <p class="hidden">
       <a ng-click="toggleProjects()">Click above to see some of my projects.</a>
     </p>
-    <p><a class="main-button pull-right hidden">Browse My Work >></a></p>
+    <p class="hidden"><a class="main-button pull-right">Browse My Work >></a></p>
   </div>
 </div>

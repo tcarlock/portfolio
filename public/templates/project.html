@@ -1,10 +1,11 @@
-<h3>{{project.title}} // {{project.primary_url}}</h3>
+<h3>{{project.title}} // {{project.display_date}}</h3>
 <p>{{project.details}}</p>
 <div class="row">
   <div class="span8">
-    <div id="image_gallery" class="widget" ng-show="project.images.length">
-      <img ng-src="/assets/screen_caps/{{image.file_path}}" ng-repeat="image in project.images" title="{{image.title}}">
+    <div id="image_gallery" class="widget" ng-show="project.attachments.length">
+      <img ng-src="{{attachment.large}}" ng-repeat="attachment in project.attachments" title="{{attachment.title}}">
     </div>
+    <h5 ng-hide="project.attachments.length">No attachments yet</h5>
   </div>
   <div class="span4">
     <div id="tech_tags" class="widget tag-list-widget clearfix">

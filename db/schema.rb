@@ -28,7 +28,9 @@ ActiveRecord::Schema.define(:version => 20130727094247) do
 
   create_table "projects", :force => true do |t|
     t.string   "title"
+    t.string   "company"
     t.text     "details"
+    t.datetime "start_date"
     t.string   "primary_url"
     t.string   "github_url"
     t.datetime "created_at",  :null => false

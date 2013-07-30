@@ -8,28 +8,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
-  <div id="toggle_tab" ng-click="toggleProjects()">
-    <span>My</span>
-    <span>Projects</span>
-  </div>
-  <header id="project_bar" class="container">
+  <div id="toggle_tab">
     <a href="/">
       <i class="icon-home icon-2x"></i>
     </a>
-    <a href="/">
-      <i class="icon-th icon-2x"></i>
-    </a>
+    <i class="icon-briefcase icon-2x" ng-click="toggleProjects()"></i>
+  </div>
+  <header id="project_bar" class="container">
     <div ng-show="initialized">
       <section id="project_list" class="grid grid-small container clearfix" ng-show="showProjects" ng-animate="{ show: 'fade-show', hide: 'fade-hide' }">
         <a href="/projects/{{project.id}}" ng-repeat="project in projects">
           <article class="format-image project">
             <div class="grid-inner clearfix">
               <h5>{{project.title}}</h5>
-              <img ng-src="{{project.thumbnail_url}}" alt="{{project.title}} thumbnail">
+              <img ng-src="{{project.thumbnail_url}}" alt="{{project.title}} thumbnail" ng-show="project.attachments.length">
+              <span ng-hide="project.attachments.length">No attachments yet</span>
             </div>
           </article>
         </a>
       </section>
   </header>
-  <div id="body_container" class="container" ng-view></div>
+  <div id="container_outer" style="border:1px transparent solid;">
+    <div id="body_container" class="container" ng-view></div>
+  </div>
 </body>
