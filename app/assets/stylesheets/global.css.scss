@@ -147,6 +147,18 @@ article {
 .contact-list {
   li {
     padding: 5px 0;
+
+    * {
+      vertical-align: middle;
+    }
+
+    i {
+      margin-top: -4px;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -230,7 +242,7 @@ Global page styles
 
 #image_gallery {
   padding:0px;
-  height:250px;
+  height:575px;
   width:770px;
   background-color:#000;
   @include border-radius(0);
