@@ -120,17 +120,6 @@ attachment.file = File.open('app/assets/images/screen_caps/topic_flock/profile.p
 project.attachments << attachment
 
 project = Project.create(
-  title: "colophon.me",
-  details: "Colophon is a toolset to help small businesses build engaging client stories and easily share those stories across multiple marketing channels including email, social media and web.
-
-    Colophon also gives users a set of analytics to gain more insight into which client-projects and mareting channels are driving the most traffic.", 
-  primary_url: '',
-  start_date: DateTime.strptime("{ 2013, 01, 01 }", "{ %Y, %m, %d }"),
-  tech_list: "Ruby on Rails, PostgreSQL, Sass, CSS3, CoffeeScript, BackboneJS, AngularJS",
-  skill_list: "Web Application Development, Interface Design"
-)
-
-project = Project.create(
   title: "Expedia Reviews API",
   details: "In order to improve responsiveness of various sites and pages in the Expedia application we developed a new API to serve hotel reviews.
   
@@ -140,7 +129,6 @@ project = Project.create(
   tech_list: "Java, Spring, MongoDB, Hadoop",
   skill_list: "Web API, Database Design, NoSQL, Map/Reduce"
 )
-
 
 # project = Project.create(
 #   title: "timcarlock.com",
