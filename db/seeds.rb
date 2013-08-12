@@ -62,7 +62,7 @@ project = Project.create(
 
     The tool was first developed using ASP.Net MVC and later migrated to Ruby on Rails running on MySQL. I also used jQuery and Sass on the front end.", 
   primary_url: 'http://nexly.com',
-  start_date: DateTime.strptime("{ 2010, 01, 01 }", "{ %Y, %m, %d }"),
+  start_date: DateTime.strptime("{ 2009, 01, 01 }", "{ %Y, %m, %d }"),
   tech_list: "Ruby on Rails, Sass, Haml, CSS3, jQuery, CoffeeScript, JavaScript, Sphinx, Twitter Bootstrap, Heroku, Devise, Paperclip, CanCan, PostgreSQL",
   skill_list: "Web Application Development, Interface Design, API Design, PaaS"
 )
