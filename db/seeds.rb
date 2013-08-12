@@ -119,16 +119,16 @@ attachment = Attachment.new(sort_order: project.attachments.count + 1, title: "A
 attachment.file = File.open('app/assets/images/screen_caps/topic_flock/profile.png')
 project.attachments << attachment
 
-project = Project.create(
-  title: "Expedia Reviews API",
-  details: "In order to improve responsiveness of various sites and pages in the Expedia application we developed a new API to serve hotel reviews.
+# project = Project.create(
+#   title: "Expedia Reviews API",
+#   details: "In order to improve responsiveness of various sites and pages in the Expedia application we developed a new API to serve hotel reviews.
   
-    The API had to be optimized around reads and was responsible for serving JSON-formatted reviews for multiple locales and languages.", 
-  primary_url: '',
-  start_date: DateTime.strptime("{ 2012, 07, 01 }", "{ %Y, %m, %d }"),
-  tech_list: "Java, Spring, MongoDB, Hadoop",
-  skill_list: "Web API, Database Design, NoSQL, Map/Reduce"
-)
+#     The API had to be optimized around reads and was responsible for serving JSON-formatted reviews for multiple locales and languages.", 
+#   primary_url: '',
+#   start_date: DateTime.strptime("{ 2012, 07, 01 }", "{ %Y, %m, %d }"),
+#   tech_list: "Java, Spring, MongoDB, Hadoop",
+#   skill_list: "Web API, Database Design, NoSQL, Map/Reduce"
+# )
 
 # project = Project.create(
 #   title: "timcarlock.com",
