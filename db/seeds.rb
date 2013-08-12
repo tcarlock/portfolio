@@ -1,4 +1,44 @@
 project = Project.create(
+  title: "Accent.io",
+  details: "Accent.io is a tool to help businesses improve marketing and customer engagement by better-showcasing their project work. With Accent.io businesses can build engaging client stories and share these stories across multiple marketing channels including web, email and social. There's also an analytics engine to help businesses determine which projects and channels are driving the most traffic to their projects.
+
+    The tool is built with Ruby on Rails, PostgreSQL and AngularJS on the front end. It was initially developed with BackboneJS; however, I migrated it to AngularJS in order speed up development. It&apos;s running on Heroku with a Solr server deployed on EC2." , 
+  primary_url: '',
+  start_date: DateTime.strptime("{ 2013, 01, 01 }", "{ %Y, %m, %d }"),
+  tech_list: "Ruby on Rails, Sass, CSS3, AngularJS, BackboneJS, jQuery, CoffeeScript, JavaScript, Solr, Sunspot, Twitter Bootstrap, Heroku, Devise, Paperclip, CanCan, PostgreSQL",
+  skill_list: "Web Application Development, Interface Design, API Design, PaaS, Performance Optimization"
+)
+
+attachment = Attachment.new(sort_order: project.attachments.count + 1, title: '', details: '')
+attachment.file = File.open('app/assets/images/screen_caps/accent_io/profile.png')
+project.attachments << attachment
+
+attachment = Attachment.new(sort_order: project.attachments.count + 1, title: '', details: '')
+attachment.file = File.open('app/assets/images/screen_caps/accent_io/tags.png')
+project.attachments << attachment
+
+attachment = Attachment.new(sort_order: project.attachments.count + 1, title: '', details: '')
+attachment.file = File.open('app/assets/images/screen_caps/accent_io/project.png')
+project.attachments << attachment
+
+attachment = Attachment.new(sort_order: project.attachments.count + 1, title: '', details: '')
+attachment.file = File.open('app/assets/images/screen_caps/accent_io/showcase.png')
+project.attachments << attachment
+
+attachment = Attachment.new(sort_order: project.attachments.count + 1, title: '', details: '')
+attachment.file = File.open('app/assets/images/screen_caps/accent_io/sharing.png')
+project.attachments << attachment
+
+attachment = Attachment.new(sort_order: project.attachments.count + 1, title: '', details: '')
+attachment.file = File.open('app/assets/images/screen_caps/accent_io/settings.png')
+project.attachments << attachment
+
+attachment = Attachment.new(sort_order: project.attachments.count + 1, title: '', details: '')
+attachment.file = File.open('app/assets/images/screen_caps/accent_io/analytics.png')
+project.attachments << attachment
+
+
+project = Project.create(
   title: "Sleeve A Message",
   details: "I'm currently building a web-based application that gives a allows a coffee-sleeve supplier the ability to (1) automatically generate and manage sleeve orders; (2) sell ad space on these sleeves; and (3) print ads on sleeves real time at cafes. This project consists of two components: (1) a Rails web app for managing cafe profiles, generating and monitoring orders, managing marketing assets, and setting up ad buys; and (2) a Sinatra-based API for auto-generating sleeve orders and serving ad content to on-site thermal printers.
 

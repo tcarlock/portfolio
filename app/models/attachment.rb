@@ -5,7 +5,7 @@ class Attachment < ActiveRecord::Base
 
   has_attached_file :file,
     path: 'app/assets/images/project_images/:style/:id/:filename',
-    url: '/project_images/:style/:id/:filename',
+    url: '/assets/project_images/:style/:id/:filename',
     styles: {
       large: ['1000x1540>', :png],
       small: ['385x250>', :png],
