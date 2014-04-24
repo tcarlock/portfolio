@@ -1,9 +1,16 @@
 /* Override bootstrap defaults; will be respected by bootstrap-sass */
 
+/* Global Bootstrap settings */
+$link-color: #eb374b;
+$link-colorHover: #eb374b;
+$brand-primary: #eb374b;
+$font-size-base: 15px;
+$font-family-sans-serif: "proxima-nova", Lato, sans-serif;
+$bodyFontWeight: 300;
+$headings-font-weight: 300;
+$navbar-height: 60px;
+
 /* Misc defaults */
-$baseFontSize:15px;
-$baseFontFamily:'Open Sans', sans-serif;
-$navbarHeight:60px;
 $bodyPaddingTop:35px;
 $widgetPadding:15px;
 $textColor:#7F7F7F;

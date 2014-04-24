@@ -1,6 +1,5 @@
 @import 'sass_base';
 @import 'bootstrap';
-@import 'bootstrap-responsive';
 @import 'font-awesome';
 
 /*----------------------------------------------------------------------------------------
@@ -17,13 +16,12 @@ html, body, #container_outer, #side_pane {
 }
 
 #body_container, #container_outer, #side_pane {
-  height:auto;
   min-height:100%;
 }
 
 body {
-  background:url('/assets/background.png') repeat;
-  font-family:'Helvetica';
+  background-color: rgb(231, 231, 231);
+  font-weight: $bodyFontWeight;
 }
 
 .container {
@@ -35,9 +33,9 @@ body {
   padding-top: $bodyPaddingTop;
   padding-bottom: $bodyPaddingTop;
   margin-top: 75px;
-  /*@include box-shadow(#{0 -2px 3px rgba(0,0,0,.25) inset});*/
   @include box-shadow(#{0 0 2px 0px rgba(0, 0, 0, 0.05)});
   border: 1px solid rgba(0,0,0,.15);
+  position: relative;
 }
 
 h1, h2, h3, h4, h5 {
@@ -87,6 +85,14 @@ a {
       text-decoration: underline;
     }
   }
+}
+
+.deprecated {
+  display: none;
+}
+
+.panel-spacer {
+  margin-bottom: 40px;
 }
 
 /*----------------------------------------------------------------------------------------

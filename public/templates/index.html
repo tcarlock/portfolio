@@ -1,9 +1,8 @@
 <div class="row">
-  <div class="span3 side-bar">
+  <div class="col-xs-3 side-bar">
     <img id="avatar" src="/assets/IMG_4634-1.jpg" />
     <section id="links" class="widget">
-      <h4>More About Me</h4>
-      <ul class="contact-list unstyled">
+      <ul class="contact-list list-unstyled">
         <li>
           <a popup href="http://www.linkedin.com/in/tscarlock/">
             <i class="icon-linkedin icon-large"></i>
@@ -30,9 +29,30 @@
         </li>
       </ul>
     </section>
-    <section id="resources" class="widget">
-      <h4>Some Interesting Resources</h4>
-      <ul class="link-list unstyled">
+  </div>
+  <div class="col-xs-8 about-me">
+    <h1>
+      Hello...I&apos;m Tim Carlock
+    </h1>
+    <section class="panel-spacer">
+      <p>
+        I'm a full-stack web engineer and product designer who is passionate about innovation, entrepreneurship and product design/usability. I'm a native of the midwest and a recent transplant to the Bay Area. These days I spend a lot of time running, practicing martial arts and biking.
+      </p>
+    </section>
+    <section class="panel-spacer">
+      <h3>My Background</h3>
+      <p>
+        I started my career in the financial-services industry where I built an application which employed modern portfolio theory to recommend better allocations across various asset classes. I spent another five years in the financial-services industry where I built a product team before leaving to start a <a href="/projects/3">business-software company</a>. I recently joined Learnist where we&apos;re building a product to help people more-easily learn new skills.
+      </p>
+    </section>
+    <section class="panel-spacer">
+      <h3>My Technology Preferences</h3>
+      <p>
+        These days my preferred back-end stack includes PostgreSQL, Redis and Ruby on Rails. I'm a big proponent of <a href="http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/">MV* frameworks</a> on the client side and while I have experience with BackboneJS, my preferred framework is now <a popup href="http://angularjs.org">AngularJS</a>. Additionally, I use CSS3, <a href="http://http://sass-lang.com/">Sass</a>, <a href="http://coffeescript.org/">CoffeeScript</a> and <a href="http://jquery.com/">jQuery</a>. Some of my other tools include Sublime, Git, RSpec/FactoryGirl, easel.io and Balsamiq.
+      </p>
+    <section class="panel-spacer deprecated">
+      <h3>Some Interesting Resources</h3>
+      <ul class="link-list list-unstyled">
         <li>
           <a popup href="http://dailyjs.com">DailyJS</a>
         </li>
@@ -66,25 +86,6 @@
         </li>
       </ul>
     </section>
-  </div>
-  <div class="span8 about-me">
-    <h1>
-      Hello...I&apos;m Tim Carlock
-    </h1>
-    <p>
-      I'm a full-stack web engineer and <a popup href="http://adaptivepath.com/ideas/what-makes-a-design-technologist">design technologist</a> who is passionate about innovation, entrepreneurship and product design/usability. I'm a native of the midwest and a recent transplant to the Bay Area. These days I spend a lot of time running, practicing martial arts and biking.
-    </p>
-    <h4>My Background</h4>
-    <p>
-      I started my career in the financial-services industry with A.G. Edwards (now Wells Fargo) where I built an application which employed modern portfolio theory to recommend better allocations across various asset classes. I spent another five years in the financial-services industry where I built a product team before leaving to start a <a href="/projects/3">business-software company</a>. I recently joined Learnist where we&apos;re building a product to help people more-easily learn new skills.
-    </p>
-    <h4>My Technology Preferences</h4>
-    <p>
-      These days my preferred back-end stack includes PostgreSQL, Redis and Ruby on Rails. I'm a big proponent of <a href="http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/">MV* frameworks</a> on the client side and while I have experience with BackboneJS, my preferred framework is now <a popup href="http://angularjs.org">AngularJS</a>. Additionally, I use CSS3, <a href="http://http://sass-lang.com/">Sass</a>, <a href="http://coffeescript.org/">CoffeeScript</a> and <a href="http://jquery.com/">jQuery</a>. Some of my other tools include Sublime, Git, RSpec/FactoryGirl, easel.io and Balsamiq.
-    </p>
-    <p class="hidden">
-      <a ng-click="toggleProjects()">Click above to see some of my projects.</a>
-    </p>
     <a class="main-button pull-right" href="/projects/{{projects[0].id}}">Browse My Projects &raquo;</a>
   </div>
 </div>

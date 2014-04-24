@@ -24,7 +24,7 @@
           <article class="format-image project">
             <div class="grid-inner clearfix">
               <h5>{{project.title}}</h5>
-              <img ng-src="{{project.thumbnail_url}}" alt="{{project.title}} thumbnail" ng-show="project.attachments.length">
+              <img ng-src="{{project.thumbnail_url}}" alt="{{project.title}} thumbnail" ng-show="project.attachments.length" class="img-responsive">
               <small ng-hide="project.attachments.length">No attachments yet</small>
             </div>
           </article>

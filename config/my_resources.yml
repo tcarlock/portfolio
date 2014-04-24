@@ -1,0 +1,36 @@
+[{
+  url: "http://dailyjs.com"
+  title: "DailyJS"
+},
+{
+  url: "http://www.smashingmagazine.com"
+  title: "Smashing Magazine"
+},
+{
+  url: "http://uxmag.com"
+  title: "UX Magazine"
+},
+{
+  url: "http://robots.thoughtbot.com"
+  title: "ThoughtBot Blog"
+},
+{
+  url: "http://37signals/svn"
+  title: "37 Signals Blog - Signal vs. Noise"
+},
+{
+  url: "http://blog.samaltman.com/"
+  title: "Sam Altman&apos;s Blog"
+},
+{
+  url: "http://www.egghead.io/"
+  title: "egghead (AngularJS tutorials)"
+},
+{
+  url: "http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142"
+  title: "The Visual Display of Quantitative Information (Tufte)"
+},
+{
+  url: "http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758"
+  title: "Don't Make Me Think: A Common Sense Approach to Web Usability (Krug)"
+}]
